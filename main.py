@@ -1,4 +1,4 @@
-a = [3, 5, 7, 9]
+a = list(map(int, input().split()))
 s = 0
 for i in a:
     s = s + i
