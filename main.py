@@ -1,5 +1,7 @@
-x = input("Podaj numer do silni: ")
-y = 1
-for i in range(1, int(x)):
-    y = y * i
-print(y)
+x = int(input("Podaj liczbę: "))
+if x > 0:
+    print("Dodatnia")
+elif x < 0:
+    print("Ujemna")
+else:
+    print("Zero")
