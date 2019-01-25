@@ -1,4 +1,3 @@
 import math
 
-for i in range(11):
-    print(("%.*f") % (i, math.pi))
+print("{} + {} = {}".format(2, 3, 2+3))
