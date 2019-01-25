@@ -1,28 +1,4 @@
-a = [5, 8, 6, 3, 4, 3, 7]
-b = [3, 8, 5]
-print(a[1:])
-print(a[:3])
-print(a[2:4])
-print(a[1:6:2])
-print(a[2::2])
-print(a[::-1])
-#a.sort(reverse = True)
-#print(a)
-a.append(10)
-print(a)
-a.pop()
-print(a)
-#del a[2]
-#print(a)
-#a.clear()
-#print(a)
-print(a.count(3))
-print(10 in a)
-a.remove(3)
-print(a)
-a.insert(3, 3)
-print(a)
-#a.append(b)
-#print(a)
-a.extend(b)
-print(a)
+ile = int(input()) // 2 + 1
+wyraz = input()
+for i in range(ile):
+    print("."*(ile - i) + wyraz[ile - i:ile + i + 1] + "."*(ile - i))
