@@ -1,3 +1,3 @@
-a = float(input("Podaj a = "))
-b = float(input("Podaj b = "))
-print("{:.1f}".format((a**2 + b**2)**0.5))
+import re
+x = re.search(r"\d\d-\d\d\d", "gfdfnfdxbgfh gfxbxfgh gfxhbxfgbh44-543")
+print(x.string[x.start():x.end()])
