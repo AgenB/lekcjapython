@@ -1,4 +1,4 @@
 import re
-s = "fgdbgsdddgbfdbgfgbvdfvgdhfgbfdx"
-w = re.findall(r"d.(?!f)", s)
+s = "fgdbgsdddgbfdbgfgbvdfvgjdhfgbfdx"
+w = re.findall(r"(?<=j)d.", s)
 print(w)
