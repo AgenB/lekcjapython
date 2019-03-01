@@ -1,4 +1,4 @@
 import re
-s = "<b>al{a} (ma) k[o]ta</b>"
-w = re.findall(r"[<\{\(\[].*?[\]\)\}>]", s)
+s = "<b>ala{a} (m[costam]a) k[o]ta</b>"
+w = re.search(r"(?P<cos>[a]).(?P=cos)", s)
 print(w)
