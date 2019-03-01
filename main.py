@@ -1,4 +1,4 @@
 import re
-s = "<b>ala ma kota</b>"
-w = re.findall(r"<.*?>", s)
+s = "<b>al{a} (ma) k[o]ta</b>"
+w = re.findall(r"[<\{\(\[].*?[\]\)\}>]", s)
 print(w)
