@@ -1,2 +1,4 @@
-a = [i*i for i in range(1,101)]
-print(a)
+a = [i for i in range(3)]
+b = [a for i in range(3)]
+a[0] = 7
+print(b)
