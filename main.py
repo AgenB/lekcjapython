@@ -1,1 +1,2 @@
-print(list(map(lambda x: x**2, range(1,101))))
+a = [i*i for i in range(1,101)]
+print(a)
