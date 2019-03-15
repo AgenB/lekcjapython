@@ -1,9 +1,4 @@
-def nwd(a, b):
-    while (b != 0):
-        a, b = b, a % b
-    return a
+def fun(a, b, *c):
+    print(a, b, c)
 
-t = int(input())
-for i in range(t):
-    a, b = map(int, input().split())
-    print(nwd(a, b))
+fun(3,4,5,6,7)
