@@ -1,4 +1,12 @@
-def fun(a, b, *c):
-    print(a, b, c)
+def nwd(a, b):
+    while (b != 0):
+        a, b = b, a % b
+    return a
 
-fun(3,4,5,6,7)
+def nwdMul(a, b, *c):
+    d = nwd(a, b)
+    for i in c:
+        d = nwd(d, i)
+    return d
+
+print(nwdMul(12, 18, 33, 60))
