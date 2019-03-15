@@ -1,3 +1,1 @@
-a = [1, 3, 6, 8]
-b = list(map((lambda x, y: x**y), a, a))
-print(b)
+print(list(map(lambda x: x**2, range(1,101))))
