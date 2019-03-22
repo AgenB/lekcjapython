@@ -1,4 +1,4 @@
-a = [i for i in range(3)]
-b = [[j for j in range(3)] for i in range(3)]
-b[0][0] = 7
-print(b)
+a = {"ala": 15, "janek": 20}
+a[4] = 5
+a[(2, 3, 4)] = "krotka"
+print(a)
