@@ -1,9 +1,14 @@
 class Osoba:
-    def __init__(self, imie, nazw):
+    def __init__(self, imie, nazw, wiek):
         self.imie = imie
         self.nazw = nazw
+        self.wiek = wiek
     def przedstaw(self):
-        print("Nazywam się {} {}".format(self.imie, self.nazw))
+        print(f"Nazywam się {self.imie} {self.nazw}, mam {self.wiek} lat.")
+    def urodziny(self):
+        self.wiek += 1
+        self.przedstaw()
 
-ktos = Osoba("Jan", "Kowalski")
+ktos = Osoba("Jan", "Kowalski", 16)
 ktos.przedstaw()
+ktos.urodziny()
