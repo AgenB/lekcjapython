@@ -1,6 +1,19 @@
+from random import randrange
+
+def kostka():
+    return randrange(1, 7)
+
+x = int(input())
 d = {}
-for _ in range(int(input())):
-    for i in input(): d[i] = d.get(i, 0) + 1
-a = list(d.items()
-a.sort(key=lambda x: x[0].swapcase())
-for i in a[1:]: print(i[0], i[1])
+s = 0
+
+for _ in range(x):
+    i = kostka() + kostka() + kostka()
+    d[i] = d.get(i, 0) + 1
+    s += i
+
+print("Suma oczek:", s)
+print("Statystyki:")
+
+for s in sorted(d):
+    print("{} wypadło {:.3%} razy".format(s, d[s] / x))
