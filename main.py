@@ -1,19 +1,9 @@
-from random import randrange
+class Osoba:
+    def __init__(self, imie, nazw):
+        self.imie = imie
+        self.nazw = nazw
+    def przedstaw(self):
+        print("Nazywam się {} {}".format(self.imie, self.nazw))
 
-def kostka():
-    return randrange(1, 7)
-
-x = int(input())
-d = {}
-s = 0
-
-for _ in range(x):
-    i = kostka() + kostka() + kostka()
-    d[i] = d.get(i, 0) + 1
-    s += i
-
-print("Suma oczek:", s)
-print("Statystyki:")
-
-for s in sorted(d):
-    print("{} wypadło {:.3%} razy".format(s, d[s] / x))
+ktos = Osoba("Jan", "Kowalski")
+ktos.przedstaw()
