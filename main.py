@@ -1,9 +1,11 @@
-try:
-    x = int(input())
-    print(1 / x)
-except ZeroDivisionError:
-    print("Nie wolno dzielić przez 0")
-except ValueError:
-    print("Miałeś podać liczbę całkowitą 😣 ")
-except Exception as e:
-    print("Coś poszło nie tak 😣 ", type(e))
+ile = 0
+while True:
+    try:
+        x = int(input())
+        ile += 1
+    except KeyboardInterrupt as e:
+        print()
+        break
+    except:
+        pass
+print(ile)
