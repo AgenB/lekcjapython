@@ -1,11 +1,4 @@
-ile = 0
-while True:
-    try:
-        x = int(input())
-        ile += 1
-    except KeyboardInterrupt as e:
-        print()
-        break
-    except:
-        pass
-print(ile)
+z = {3, 5, 4, 3, 4, 5, 6, 5, 4}
+s = "afgbfdvgfdgb"
+x = set(s)
+print(x)
