@@ -1,4 +1,6 @@
-z = {3, 5, 4, 3, 4, 5, 6, 5, 4}
-s = "afgbfdvgfdgb"
-x = set(s)
-print(x)
+A = {"Jan", "Ala", "Ola", "Ula"}
+B = {"Ben", "Ula", "Ken"}
+print(A.union(B))
+print(A.intersection(B))
+print(A.difference(B))
+print(A.symmetric_difference(B))
