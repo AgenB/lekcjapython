@@ -1,1 +1,1 @@
-print("ala ma kota".count("a"))
+100,10,244
