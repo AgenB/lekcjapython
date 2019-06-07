@@ -30,15 +30,15 @@ def chess(x, y, l, c1, c2):
 
 def tree(n, a):
     if n == 0: return
-    t.fd(a); t.lt(30)
-    tree(n-1, a/2)
-    t.rt(60)
-    tree(n-1, a/2)
-    t.lt(30); t.bk(a)
+    t.fd(a); t.lt(20)
+    tree(n-1, a/1.3)
+    t.rt(40)
+    tree(n-1, a/1.3)
+    t.lt(20); t.bk(a)
 
 def drawTree(degree):
-    t.pu(); t.home(); t.seth(90); t.bk(240); t.pd()
-    tree(degree, 240)
+    t.pu(); t.home(); t.seth(90); t.bk(120); t.pd()
+    tree(degree, 120)
 
 drawTree(7)
 
