@@ -28,6 +28,20 @@ def chess(x, y, l, c1, c2):
         t.left(90)
         t.pd()
 
-chess(8, 8, 120, (random.randint(0,255),random.randint(0,255),random.randint(0,255)), (random.randint(0,255),random.randint(0,255),random.randint(0,255)))
+def tree(n, a):
+    if n == 0: return
+    t.fd(a); t.lt(30)
+    tree(n-1, a/2)
+    t.rt(60)
+    tree(n-1, a/2)
+    t.lt(30); t.bk(a)
+
+def drawTree(degree):
+    t.pu(); t.home(); t.seth(90); t.bk(240); t.pd()
+    tree(degree, 240)
+
+drawTree(7)
+
+#chess(8, 8, 120, (random.randint(0,255),random.randint(0,255),random.randint(0,255)), (random.randint(0,255),random.randint(0,255),random.randint(0,255)))
 
 input()
