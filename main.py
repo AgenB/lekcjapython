@@ -1,6 +1,10 @@
-A = {"Jan", "Ala", "Ola", "Ula"}
-B = {"Ben", "Ula", "Ken"}
-print(A.union(B))
-print(A.intersection(B))
-print(A.difference(B))
-print(A.symmetric_difference(B))
+import turtle
+
+t = turtle.Turtle()
+
+for c in ["red", "green", "yellow", "blue"]:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+
+input()
